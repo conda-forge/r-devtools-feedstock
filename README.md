@@ -14,14 +14,16 @@ Summary: Collection of package development tools.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-devtools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-devtools-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-devtools-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-devtools-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-devtools-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-devtools-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-devtools-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-devtools-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-devtools-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-devtools-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-devtools-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-devtools-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-devtools/badges/version.svg)](https://anaconda.org/conda-forge/r-devtools)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-devtools/badges/downloads.svg)](https://anaconda.org/conda-forge/r-devtools)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--devtools-green.svg)](https://anaconda.org/conda-forge/r-devtools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-devtools.svg)](https://anaconda.org/conda-forge/r-devtools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-devtools.svg)](https://anaconda.org/conda-forge/r-devtools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-devtools.svg)](https://anaconda.org/conda-forge/r-devtools) |
 
 Installing r-devtools
 =====================
