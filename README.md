@@ -1,7 +1,7 @@
 About r-devtools
 ================
 
-Home: https://github.com/hadley/devtools
+Home: https://github.com/r-lib/devtools
 
 Package license: GPL (>= 2)
 
