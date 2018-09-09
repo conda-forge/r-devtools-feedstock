@@ -1,4 +1,4 @@
-{% set version = "1.13.6" %}
+{% set version = '1.13.6' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -10,13 +10,13 @@ package:
 source:
   fn: devtools_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/devtools_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/devtools/devtools_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/devtools_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/devtools/devtools_{{ version }}.tar.gz
   sha256: b9749de8b095bd4983ef95a7700e53e4295a747fd20e9eae77dc372f5b2236b5
 
 build:
-  number: 0
-  skip: true  # [win32]
+  merge_build_host: True  # [win]
+  number: 1
 
   rpaths:
     - lib/R/lib/
@@ -24,6 +24,9 @@ build:
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
+
+  host:
     - r-base
     - r-digest
     - r-git2r >=0.11.0
@@ -47,17 +50,22 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('devtools')"  # [not win]
+    - $R -e "library('devtools')"           # [not win]
     - "\"%R%\" -e \"library('devtools')\""  # [win]
 
 about:
-  home: https://github.com/hadley/devtools
+  home: https://github.com/r-lib/devtools
   license: GPL (>= 2)
   summary: Collection of package development tools.
   license_family: GPL3
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
 
 extra:
   recipe-maintainers:
-    - jdblischak
+    - cbrueffer
     - johanneskoester
     - bgruening
+    - daler
+    - jdblischak
+    - dbast
