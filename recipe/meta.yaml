@@ -15,8 +15,9 @@ source:
   sha256: 0ef5f1cfca9f6184d32ba62d69b42f1cc574c25807cc815f0eed27cb22bedadb
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
+  number: 1000
 
   rpaths:
     - lib/R/lib/
@@ -72,8 +73,7 @@ about:
   license: GPL (>= 2)
   summary: Collection of package development tools.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
