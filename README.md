@@ -14,8 +14,14 @@ Summary: Collection of package development tools.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-devtools-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-devtools-feedstock)
+
+<table><tr>
+    <td>All platforms:</td>
+    <td>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -48,6 +54,8 @@ conda search r-devtools --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -103,3 +111,9 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@conda-forge/r](https://github.com/conda-forge/r/)
+
