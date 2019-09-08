@@ -3,7 +3,7 @@ About r-devtools
 
 Home: https://github.com/r-lib/devtools
 
-Package license: GPL (>= 2)
+Package license: GPL-2
 
 Feedstock license: BSD 3-Clause
 
