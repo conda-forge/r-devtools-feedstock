@@ -1,4 +1,4 @@
-{% set version = '2.2.1' %}
+{% set version = "2.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/devtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/devtools/devtools_{{ version }}.tar.gz
-  sha256: 2e988fb56b068ba958ea471224d2462427868ce7706e157a90c0ce0e13294e44
+  sha256: e988f435fbb5cfc89c4a4755a999dd08f176dd63151dc340e3bf5d1a91140bae
 
 build:
   merge_build_host: True  # [win]
