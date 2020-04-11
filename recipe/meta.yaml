@@ -1,4 +1,4 @@
-{% set version = "2.3.0" %}
+{% set version = '2.3.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -25,58 +25,58 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
-    - r-dt
-    - r-callr
-    - r-cli
-    - r-covr >=3.2.0
-    - r-crayon
-    - r-desc
-    - r-digest
+    - r-dt >=0.13
+    - r-callr >=3.4.3
+    - r-cli >=2.0.2
+    - r-covr >=3.5.0
+    - r-crayon >=1.3.4
+    - r-desc >=1.2.0
+    - r-digest >=0.6.25
     - r-ellipsis >=0.3.0
-    - r-git2r >=0.23.0
-    - r-glue
-    - r-httr >=0.4
-    - r-jsonlite
-    - r-memoise >=1.0.0
-    - r-pkgbuild >=1.0.3
+    - r-git2r >=0.26.1
+    - r-glue >=1.4.0
+    - r-httr >=1.4.1
+    - r-jsonlite >=1.6.1
+    - r-memoise >=1.1.0
+    - r-pkgbuild >=1.0.6
     - r-pkgload >=1.0.2
     - r-rcmdcheck >=1.3.3
-    - r-remotes >=2.1.0
-    - r-rlang
-    - r-roxygen2 >=6.1.1
-    - r-rstudioapi >=0.7
-    - r-rversions
+    - r-remotes >=2.1.1
+    - r-rlang >=0.4.5
+    - r-roxygen2 >=7.1.0
+    - r-rstudioapi >=0.11
+    - r-rversions >=2.0.1
     - r-sessioninfo >=1.1.1
-    - r-testthat >=2.1.1
-    - r-usethis >=1.5.0
-    - r-withr
+    - r-testthat >=2.3.2
+    - r-usethis >=1.6.0
+    - r-withr >=2.1.2
   run:
     - r-base
-    - r-dt
-    - r-callr
-    - r-cli
-    - r-covr >=3.2.0
-    - r-crayon
-    - r-desc
-    - r-digest
+    - r-dt >=0.13
+    - r-callr >=3.4.3
+    - r-cli >=2.0.2
+    - r-covr >=3.5.0
+    - r-crayon >=1.3.4
+    - r-desc >=1.2.0
+    - r-digest >=0.6.25
     - r-ellipsis >=0.3.0
-    - r-git2r >=0.23.0
-    - r-glue
-    - r-httr >=0.4
-    - r-jsonlite
-    - r-memoise >=1.0.0
-    - r-pkgbuild >=1.0.3
+    - r-git2r >=0.26.1
+    - r-glue >=1.4.0
+    - r-httr >=1.4.1
+    - r-jsonlite >=1.6.1
+    - r-memoise >=1.1.0
+    - r-pkgbuild >=1.0.6
     - r-pkgload >=1.0.2
     - r-rcmdcheck >=1.3.3
-    - r-remotes >=2.1.0
-    - r-rlang
-    - r-roxygen2 >=6.1.1
-    - r-rstudioapi >=0.7
-    - r-rversions
+    - r-remotes >=2.1.1
+    - r-rlang >=0.4.5
+    - r-roxygen2 >=7.1.0
+    - r-rstudioapi >=0.11
+    - r-rversions >=2.0.1
     - r-sessioninfo >=1.1.1
-    - r-testthat >=2.1.1
-    - r-usethis >=1.5.0
-    - r-withr
+    - r-testthat >=2.3.2
+    - r-usethis >=1.6.0
+    - r-withr >=2.1.2
 
 test:
   commands:
@@ -84,8 +84,8 @@ test:
     - "\"%R%\" -e \"library('devtools')\""  # [win]
 
 about:
-  home: https://github.com/r-lib/devtools
-  license: GPL-2
+  home: https://devtools.r-lib.org/, https://github.com/r-lib/devtools
+  license: GPL-2.0-or-later
   summary: Collection of package development tools.
   license_family: GPL2
   license_file:
@@ -97,22 +97,22 @@ extra:
 
 # Package: devtools
 # Title: Tools to Make Developing R Packages Easier
-# Version: 2.2.1
+# Version: 2.3.0
 # Authors@R: c( person("Hadley", "Wickham", role = "aut"), person("Jim", "Hester", , "jim.hester@rstudio.com", role = c("aut", "cre")), person("Winston", "Chang", role = "aut"), person("RStudio", role = "cph"), person("R Core team", role = "ctb", comment = "Some namespace and vignette code extracted from base R") )
 # Description: Collection of package development tools.
 # License: GPL (>= 2)
-# URL: https://github.com/r-lib/devtools
+# URL: https://devtools.r-lib.org/, https://github.com/r-lib/devtools
 # BugReports: https://github.com/r-lib/devtools/issues
-# Depends: R (>= 3.0.2), usethis (>= 1.5.0)
-# Imports: callr, cli, covr (>= 3.2.0), crayon, desc, digest, DT, ellipsis (>= 0.3.0), glue, git2r (>= 0.23.0), httr (>= 0.4), jsonlite, memoise (>= 1.0.0), pkgbuild (>= 1.0.3), pkgload (>= 1.0.2), rcmdcheck (>= 1.3.3), remotes (>= 2.1.0), rlang, roxygen2 (>= 6.1.1), rstudioapi (>= 0.7), rversions, sessioninfo (>= 1.1.1), stats, testthat (>= 2.1.1), tools, utils, withr
-# Suggests: BiocManager, bitops, curl (>= 0.9), evaluate, foghorn (>= 1.1.0), gmailr (> 0.7.0), knitr, lintr (>= 0.2.1), mockery, pingr, MASS, pkgdown, Rcpp (>= 0.10.0), rhub (>= 1.0.2), rmarkdown, spelling (>= 1.1), whisker
+# Depends: R (>= 3.0.2), usethis (>= 1.6.0)
+# Imports: callr (>= 3.4.3), cli (>= 2.0.2), covr (>= 3.5.0), crayon (>= 1.3.4), desc (>= 1.2.0), digest (>= 0.6.25), DT (>= 0.13), ellipsis (>= 0.3.0), glue (>= 1.4.0), git2r (>= 0.26.1), httr (>= 1.4.1), jsonlite (>= 1.6.1), memoise (>= 1.1.0), pkgbuild (>= 1.0.6), pkgload (>= 1.0.2), rcmdcheck (>= 1.3.3), remotes (>= 2.1.1), rlang (>= 0.4.5), roxygen2 (>= 7.1.0), rstudioapi (>= 0.11), rversions (>= 2.0.1), sessioninfo (>= 1.1.1), stats, testthat (>= 2.3.2), tools, utils, withr (>= 2.1.2)
+# Suggests: BiocManager (>= 1.30.10), curl (>= 4.3), foghorn (>= 1.1.5), gmailr (>= 1.0.0), knitr (>= 1.28), lintr (>= 2.0.1), mockery (>= 0.4.2), pingr (>= 2.0.0), MASS, pkgdown (>= 1.5.1), rhub (>= 1.1.1), rmarkdown (>= 2.1), spelling (>= 2.1)
 # VignetteBuilder: knitr
 # Encoding: UTF-8
-# RoxygenNote: 6.1.1
+# RoxygenNote: 7.1.0
 # Language: en-US
 # NeedsCompilation: no
-# Packaged: 2019-09-24 13:01:37 UTC; jhester
+# Packaged: 2020-04-09 17:12:11 UTC; jhester
 # Author: Hadley Wickham [aut], Jim Hester [aut, cre], Winston Chang [aut], RStudio [cph], R Core team [ctb] (Some namespace and vignette code extracted from base R)
 # Maintainer: Jim Hester <jim.hester@rstudio.com>
 # Repository: CRAN
-# Date/Publication: 2019-09-24 15:00:02 UTC
+# Date/Publication: 2020-04-10 23:20:11 UTC
