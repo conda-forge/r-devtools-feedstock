@@ -1,9 +1,9 @@
 About r-devtools
 ================
 
-Home: https://github.com/r-lib/devtools
+Home: https://devtools.r-lib.org/, https://github.com/r-lib/devtools
 
-Package license: GPL-2
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD 3-Clause
 
