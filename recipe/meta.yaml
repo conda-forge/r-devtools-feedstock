@@ -1,4 +1,4 @@
-{% set version = "2.2.2" %}
+{% set version = "2.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/devtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/devtools/devtools_{{ version }}.tar.gz
-  sha256: e988f435fbb5cfc89c4a4755a999dd08f176dd63151dc340e3bf5d1a91140bae
+  sha256: 4fc375c171335c67bd71df4e0b1b3dff2ae3aa17b3e0566b790ba0808b39dcd0
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -89,7 +89,7 @@ about:
   summary: Collection of package development tools.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
