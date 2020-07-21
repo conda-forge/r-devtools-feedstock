@@ -5,7 +5,7 @@ Home: https://devtools.r-lib.org/, https://github.com/r-lib/devtools
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Collection of package development tools.
 
