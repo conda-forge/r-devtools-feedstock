@@ -3,7 +3,7 @@ About r-devtools
 
 Home: https://devtools.r-lib.org/, https://github.com/r-lib/devtools
 
-Package license: GPL-2.0-or-later
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-devtools-feedstock/blob/main/LICENSE.txt)
 
