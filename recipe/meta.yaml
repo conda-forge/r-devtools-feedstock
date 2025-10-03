@@ -1,4 +1,4 @@
-{% set version = "2.4.5" %}
+{% set version = "2.4.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/devtools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/devtools/devtools_{{ version }}.tar.gz
-  sha256: 38160ebd839acdec7ebf0699a085b4ab1ebd5500d3c57a9fa7ae484f1909904b
+  sha256: d424a1a0b0110e6a6a2bfcba7958faa7a9cf82fba22f019fc99cc4e10fb80b9a
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
