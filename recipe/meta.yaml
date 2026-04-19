@@ -24,52 +24,50 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-cli >=3.3.0
-    - r-desc >=1.4.1
-    - r-ellipsis >=0.3.2
-    - r-fs >=1.5.2
-    - r-lifecycle >=1.0.1
+    - r-cli >=3.6.6
+    - r-desc >=1.4.3
+    - r-ellipsis >=0.3.3
+    - r-fs >=2.0.1
+    - r-lifecycle >=1.0.5
     - r-memoise >=2.0.1
-    - r-miniui >=0.1.1.1
-    - r-pak
-    - r-pkgbuild >=1.3.1
-    - r-pkgdown >=2.0.6
-    - r-pkgload >=1.3.0
-    - r-profvis >=0.3.7
+    - r-miniui >=0.1.2
+    - r-pak >=0.9.3
+    - r-pkgbuild >=1.4.8
+    - r-pkgdown >=2.2.0
+    - r-pkgload >=1.5.1
+    - r-profvis >=0.4.0
     - r-rcmdcheck >=1.4.0
-    - r-remotes >=2.4.2
-    - r-rlang >=1.0.4
-    - r-roxygen2 >=7.2.1
-    - r-rversions >=2.1.1
-    - r-sessioninfo >=1.2.2
-    - r-testthat >=3.1.4
+    - r-rlang >=1.2.0
+    - r-roxygen2 >=7.3.3
+    - r-rversions >=3.0.0
+    - r-sessioninfo >=1.2.3
+    - r-testthat >=3.3.2
     - r-urlchecker >=1.0.1
-    - r-usethis >=2.1.6
-    - r-withr >=2.5.0
+    - r-usethis >=3.2.1
+    - r-withr >=3.0.2
   run:
     - r-base
-    - r-cli >=3.3.0
-    - r-desc >=1.4.1
-    - r-ellipsis >=0.3.2
-    - r-fs >=1.5.2
-    - r-lifecycle >=1.0.1
+    - r-cli >=3.6.6
+    - r-desc >=1.4.3
+    - r-ellipsis >=0.3.3
+    - r-fs >=2.0.1
+    - r-lifecycle >=1.0.5
     - r-memoise >=2.0.1
-    - r-miniui >=0.1.1.1
-    - r-pak
-    - r-pkgbuild >=1.3.1
-    - r-pkgdown >=2.0.6
-    - r-pkgload >=1.3.0
-    - r-profvis >=0.3.7
+    - r-miniui >=0.1.2
+    - r-pak >=0.9.3
+    - r-pkgbuild >=1.4.8
+    - r-pkgdown >=2.2.0
+    - r-pkgload >=1.5.1
+    - r-profvis >=0.4.0
     - r-rcmdcheck >=1.4.0
-    - r-remotes >=2.4.2
-    - r-rlang >=1.0.4
-    - r-roxygen2 >=7.2.1
-    - r-rversions >=2.1.1
-    - r-sessioninfo >=1.2.2
-    - r-testthat >=3.1.4
+    - r-rlang >=1.2.0
+    - r-roxygen2 >=7.3.3
+    - r-rversions >=3.0.0
+    - r-sessioninfo >=1.2.3
+    - r-testthat >=3.3.2
     - r-urlchecker >=1.0.1
-    - r-usethis >=2.1.6
-    - r-withr >=2.5.0
+    - r-usethis >=3.2.1
+    - r-withr >=3.0.2
 
 test:
   commands:
@@ -77,12 +75,14 @@ test:
     - "\"%R%\" -e \"library('devtools')\""  # [win]
 
 about:
-  home: https://devtools.r-lib.org/, https://github.com/r-lib/devtools
+  home: https://devtools.r-lib.org/
+  dev_url: https://github.com/r-lib/devtools
   license: MIT
   summary: Collection of package development tools.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
+    - LICENSE
 
 extra:
   recipe-maintainers:
