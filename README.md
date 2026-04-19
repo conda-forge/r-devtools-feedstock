@@ -3,11 +3,13 @@ About r-devtools-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-devtools-feedstock/blob/main/LICENSE.txt)
 
-Home: https://devtools.r-lib.org/, https://github.com/r-lib/devtools
+Home: https://devtools.r-lib.org/
 
 Package license: MIT
 
 Summary: Collection of package development tools.
+
+Development: https://github.com/r-lib/devtools
 
 Current build status
 ====================
